@@ -1,0 +1,19 @@
+<h2>DForma de Pagamento - Detalhes</h2>
+
+<hr/>
+<div *ngIf="formapagamento">
+  <div>
+    <label><b>Forma : </b></label> {{formapagamento.forma}}
+  </div>
+  <div>
+    <label><b>Descrição : </b></label> {{formapagamento.descricao}}
+  </div>
+  <div>
+    <label><b>Ativo ? </b></label> {{formapagamento.ativo}}
+  </div>
+</div>
+
+<br>
+<br>
+<br><button (click)="lista()" class="btn btn-primary">Volta para Lista</button><br>
+<br><button (click)="atualizar()" class="btn btn-warning">Atualizar</button><br>

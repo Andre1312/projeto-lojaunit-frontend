@@ -1,0 +1,27 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h2>Forma de Pagamento - Listagem</h2>
+  </div>
+  <div class="panel-body">
+    <table class="table table-dark table-striped table-hover">
+      <thead>
+        <tr>
+          <th>Forma</th>
+          <th>Descrição</th>
+          <th>Ativo ?</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let formapagamento of formapagamentos | async">
+          <td>{{formapagamento.forma}}</td>
+          <td>{{formapagamento.descricao}}</td>
+          <td>{{formapagamento.ativo}}</td>
+          <td><button (click)="deleteFormapagamento(formapagamento.idFpg)" class="btn btn-danger">Apagar</button>
+              <button (click)="formapagamentoDetalhes(formapagamento.idFpg)" class="btn btn-info" style="margin-left: 10px">Detalhes</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

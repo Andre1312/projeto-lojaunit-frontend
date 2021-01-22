@@ -1,0 +1,21 @@
+<h3>Forma de Pagamento - Atualizar</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Forma</label>
+      <input type="text" class="form-control" id="forma" required [(ngModel)]="formapagamento.forma" name="forma">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Descrição</label>
+      <input type="text" class="form-control" id="descricao" required [(ngModel)]="formapagamento.descricao" name="descricao">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Ativo</label>
+      <input type="text" class="form-control" id="ativo" required [(ngModel)]="formapagamento.ativo" name="ativo">
+    </div>
+
+    <button type="submit" class="btn btn-success">Salvar</button>
+  </form>
+</div>
