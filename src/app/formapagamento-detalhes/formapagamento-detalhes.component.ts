@@ -34,7 +34,7 @@ export class FormapagamentoDetalhesComponent implements OnInit {
   }
 
   atualizar(){
-    this.router.navigate(['update', id]);
+    this.router.navigate(['update', this.id]);
   }
 
 }

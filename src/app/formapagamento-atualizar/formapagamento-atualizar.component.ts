@@ -27,6 +27,7 @@ export class FormapagamentoAtualizarComponent implements OnInit {
       .subscribe(data => {
         console.log(data)
         this.formapagamento = data;
+
       }, error => console.log(error));
   }
 
